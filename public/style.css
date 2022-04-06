@@ -1,0 +1,38 @@
+body {
+    font-family: 'Helvetica';
+    padding: 35px;
+    background-image: linear-gradient(to left, rgba(78, 81, 147, 0.048), rgba(113, 101, 161, 0.656));
+}
+
+.table::before {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/29/22/42/film-4891298_1280.jpg');
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .15;
+}
+
+.mb-3::before {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/29/22/42/film-4891298_1280.jpg');
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .15;
+}
+
+.header img {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
