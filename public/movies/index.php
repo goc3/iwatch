@@ -9,11 +9,11 @@ if ($search) {
     $statement->bindValue(':title', "%$search%");
 } 
 
-elseif ($search) {
+/**elseif ($search) {
     $statement = $pdo->prepare('SELECT * FROM movies WHERE genre LIKE :genre ORDER BY genre DESC');
     $statement->bindValue(':genre', "%$search%");
 }
-
+*/
 else {
     $statement = $pdo->prepare('SELECT * FROM movies ORDER BY title DESC');
 }
